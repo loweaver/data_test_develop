@@ -42,6 +42,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
+in_file.xml
 *.cover
 .hypothesis/
 
@@ -97,4 +98,3 @@ ENV/
 
 # mypy
 .mypy_cache/
-
