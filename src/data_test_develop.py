@@ -44,6 +44,7 @@ def assign_data_elements(context, newListingSet):
                 # it is a list, and will need to be comma separated before being added to the Dict
                 # Assumption made: Any time a list of elements are received they will be comma separated
                 if len(context.xpath('{}/{}/text()'.format(containerKey, key))) > 1:
+                    # Changing the key from standard to use the parent element
                     listingDict[containerKey.split("/")[-1]] = ','.join(context.xpath('{}/{}/text()'.format(containerKey, key)))
                 else:
                 # Otherwise add the value
